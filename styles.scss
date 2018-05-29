@@ -20,8 +20,26 @@ $github: rgb(226, 228, 233);
   }
 }
 
+.justify-grid {
+  justify-content: center;
+}
+
+.align-cell {
+  text-align: center;
+}
+
+.mdl-list {
+  li {
+    margin-left: 35%;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
 .mdl-layout__content {
-  margin: 0 20px 0 20px;
+  padding: 0 15% 0 15%;
 }
 
 .social-buttons {
