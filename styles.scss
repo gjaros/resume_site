@@ -1,0 +1,43 @@
+$facebook: rgb(66, 103, 178);
+$twitter: rgb(29, 161, 242);
+$linkedin: rgb(0, 119, 181);
+$google: rgb(203, 60, 44);
+$github: rgb(226, 228, 233);
+
+@mixin social-button($color) {
+  display: inline;
+  a {
+    img {
+      margin: 0 2px 0 2px;
+      border-radius: 100%;
+      height: 32px;
+      width: 32px;
+      &:hover {
+        background-color: $color;
+        transition: ease .25s;
+      }
+    }
+  }
+}
+
+.mdl-layout__content {
+  margin: 0 20px 0 20px;
+}
+
+.social-buttons {
+    .facebook {
+      @include social-button($facebook);
+    }
+    .twitter {
+      @include social-button($twitter);
+    }
+    .linkedin {
+      @include social-button($linkedin);
+    }
+    .google {
+      @include social-button($google);
+    }
+    .github {
+      @include social-button($github);
+    }
+  }

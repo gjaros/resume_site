@@ -1,0 +1,55 @@
+.mdl-layout__content {
+  margin: 0 20px 0 20px; }
+
+.social-buttons .facebook {
+  display: inline; }
+  .social-buttons .facebook a img {
+    margin: 0 2px 0 2px;
+    border-radius: 100%;
+    height: 32px;
+    width: 32px; }
+    .social-buttons .facebook a img:hover {
+      background-color: #4267b2;
+      transition: ease .25s; }
+.social-buttons .twitter {
+  display: inline; }
+  .social-buttons .twitter a img {
+    margin: 0 2px 0 2px;
+    border-radius: 100%;
+    height: 32px;
+    width: 32px; }
+    .social-buttons .twitter a img:hover {
+      background-color: #1da1f2;
+      transition: ease .25s; }
+.social-buttons .linkedin {
+  display: inline; }
+  .social-buttons .linkedin a img {
+    margin: 0 2px 0 2px;
+    border-radius: 100%;
+    height: 32px;
+    width: 32px; }
+    .social-buttons .linkedin a img:hover {
+      background-color: #0077b5;
+      transition: ease .25s; }
+.social-buttons .google {
+  display: inline; }
+  .social-buttons .google a img {
+    margin: 0 2px 0 2px;
+    border-radius: 100%;
+    height: 32px;
+    width: 32px; }
+    .social-buttons .google a img:hover {
+      background-color: #cb3c2c;
+      transition: ease .25s; }
+.social-buttons .github {
+  display: inline; }
+  .social-buttons .github a img {
+    margin: 0 2px 0 2px;
+    border-radius: 100%;
+    height: 32px;
+    width: 32px; }
+    .social-buttons .github a img:hover {
+      background-color: #e2e4e9;
+      transition: ease .25s; }
+
+/*# sourceMappingURL=styles.css.map */
