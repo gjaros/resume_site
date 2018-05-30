@@ -4,6 +4,13 @@ $linkedin: rgb(0, 119, 181);
 $google: rgb(203, 60, 44);
 $github: rgb(226, 228, 233);
 
+//theme
+$color1: rgb(255, 193, 94 ); //decoration color
+$color2: rgb(228, 230, 195); //text color
+$color3: rgb(137, 152, 120); //banner color
+$color4: rgb(34,  39,  37 ); //background-color
+$color5: rgb(255, 92,  92 );
+
 @mixin social-button($color) {
   display: inline;
   a {
@@ -14,9 +21,54 @@ $github: rgb(226, 228, 233);
       width: 32px;
       &:hover {
         background-color: $color;
-        transition: ease .25s;
+        transition: ease .5s;
       }
     }
+  }
+}
+
+.mdl-layout__header {
+  color: $color4;
+  background-color: $color3;
+}
+
+.mdl-layout__tab-bar, .mdl-layout__tab-bar-button {
+  background-color: $color3;
+}
+
+main {
+  padding: 0 15% 10% 15%;
+  font-family: 'Roboto', sans-serif;
+  color: $color2;
+  background-color: $color4;
+}
+
+hr {
+  margin: 125px 0 125px 0;
+  background-color: $color1;
+}
+
+h2 {
+  font-family: 'Kanit', sans-serif;
+}
+
+h3, h4 {
+  // color: $color5;
+  font-family: 'Kanit', sans-serif;
+  text-decoration: underline;
+}
+
+h5 {
+  font-family: 'Kanit', sans-serif;
+  color: $color1;
+}
+
+.mdl-button {
+  font-family: 'Kanit', sans-serif;
+  color: $color2;
+  &:hover {
+    color: $color1;
+    transition: ease .5s;
   }
 }
 
@@ -28,18 +80,29 @@ $github: rgb(226, 228, 233);
   text-align: center;
 }
 
+.push-right {
+  margin-left: 35%;
+}
+
 .mdl-list {
+  .mdl-list__item-icon {
+    color: $color1;
+  }
   li {
-    margin-left: 35%;
+    color: $color2;
   }
 }
 
-.center {
-  text-align: center;
+.material-icons {
+  font-size: 50px;
+  &:hover {
+    color: $color1;
+    transition: ease .5s;
+  }
 }
 
-.mdl-layout__content {
-  padding: 0 15% 0 15%;
+.section-header {
+  text-align: center;
 }
 
 .social-buttons {

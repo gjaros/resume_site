@@ -1,17 +1,60 @@
+.mdl-layout__header {
+  color: #222725;
+  background-color: #899878; }
+
+.mdl-layout__tab-bar, .mdl-layout__tab-bar-button {
+  background-color: #899878; }
+
+main {
+  padding: 0 15% 10% 15%;
+  font-family: 'Roboto', sans-serif;
+  color: #e4e6c3;
+  background-color: #222725; }
+
+hr {
+  margin: 125px 0 125px 0;
+  background-color: #ffc15e; }
+
+h2 {
+  font-family: 'Kanit', sans-serif; }
+
+h3, h4 {
+  font-family: 'Kanit', sans-serif;
+  text-decoration: underline; }
+
+h5 {
+  font-family: 'Kanit', sans-serif;
+  color: #ffc15e; }
+
+.mdl-button {
+  font-family: 'Kanit', sans-serif;
+  color: #e4e6c3; }
+  .mdl-button:hover {
+    color: #ffc15e;
+    transition: ease .5s; }
+
 .justify-grid {
   justify-content: center; }
 
 .align-cell {
   text-align: center; }
 
-.mdl-list li {
+.push-right {
   margin-left: 35%; }
 
-.center {
-  text-align: center; }
+.mdl-list .mdl-list__item-icon {
+  color: #ffc15e; }
+.mdl-list li {
+  color: #e4e6c3; }
 
-.mdl-layout__content {
-  padding: 0 15% 0 15%; }
+.material-icons {
+  font-size: 50px; }
+  .material-icons:hover {
+    color: #ffc15e;
+    transition: ease .5s; }
+
+.section-header {
+  text-align: center; }
 
 .social-buttons .facebook {
   display: inline; }
@@ -22,7 +65,7 @@
     width: 32px; }
     .social-buttons .facebook a img:hover {
       background-color: #4267b2;
-      transition: ease .25s; }
+      transition: ease .5s; }
 .social-buttons .twitter {
   display: inline; }
   .social-buttons .twitter a img {
@@ -32,7 +75,7 @@
     width: 32px; }
     .social-buttons .twitter a img:hover {
       background-color: #1da1f2;
-      transition: ease .25s; }
+      transition: ease .5s; }
 .social-buttons .linkedin {
   display: inline; }
   .social-buttons .linkedin a img {
@@ -42,7 +85,7 @@
     width: 32px; }
     .social-buttons .linkedin a img:hover {
       background-color: #0077b5;
-      transition: ease .25s; }
+      transition: ease .5s; }
 .social-buttons .google {
   display: inline; }
   .social-buttons .google a img {
@@ -52,7 +95,7 @@
     width: 32px; }
     .social-buttons .google a img:hover {
       background-color: #cb3c2c;
-      transition: ease .25s; }
+      transition: ease .5s; }
 .social-buttons .github {
   display: inline; }
   .social-buttons .github a img {
@@ -62,6 +105,6 @@
     width: 32px; }
     .social-buttons .github a img:hover {
       background-color: #e2e4e9;
-      transition: ease .25s; }
+      transition: ease .5s; }
 
 /*# sourceMappingURL=styles.css.map */

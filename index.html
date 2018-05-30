@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:600|Roboto:500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
@@ -12,40 +14,57 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Gregory Jaros</span>
+          <span class="mdl-layout-title"><h2>Gregory Jaros</h2></span>
           <div class="mdl-layout-spacer"></div>
           <div class="social-buttons">
             <div class="facebook">
-              <a href="https://www.facebook.com/gregory.jaros"><img src="assets/social/facebook.svg" ></a>
+              <a href="https://www.facebook.com/gregory.jaros"><img src="assets/social/facebook.svg"></a>
             </div>
             <div class="twitter">
-              <a href="https://twitter.com/JiuJitsuJaros"><img src="assets/social/twitter.svg" ></a>
+              <a href="https://twitter.com/JiuJitsuJaros"><img src="assets/social/twitter.svg"></a>
             </div>
             <div class="linkedin">
-              <a href="https://www.linkedin.com/in/gregory-jaros/"><img src="assets/social/linkedin.svg" ></a>
+              <a href="https://www.linkedin.com/in/gregory-jaros/"><img src="assets/social/linkedin.svg"></a>
             </div>
             <div class="google">
-              <a href="#"><img src="assets/social/google.svg" ></a>
+              <a href="#"><img src="assets/social/google.svg"></a>
             </div>
             <div class="github">
-              <a href="https://github.com/gjaros"><img src="assets/social/github.svg" ></a>
+              <a href="https://github.com/gjaros"><img src="assets/social/github.svg"></a>
             </div>
           </div>
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-          <a href="#scroll-tab-1" class="mdl-layout__tab is-active">About</a>
-          <a href="#scroll-tab-2" class="mdl-layout__tab">Education</a>
-          <a href="#scroll-tab-3" class="mdl-layout__tab">Projects</a>
-          <a href="#scroll-tab-4" class="mdl-layout__tab">Skills</a>
-          <a href="#scroll-tab-5" class="mdl-layout__tab">Career</a>
-          <a href="#scroll-tab-6" class="mdl-layout__tab">Contact</a>
+          <a href="#scroll-tab-1"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">About</button></a>
+          <a href="#scroll-tab-2"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Education</button></a>
+          <a href="#scroll-tab-3"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Projects</button></a>
+          <a href="#scroll-tab-4"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Skills</button></a>
+          <a href="#scroll-tab-5"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Career</button></a>
+          <a href="#scroll-tab-6"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Contact</button></a>
         </div>
       </header>
-
       <main class="mdl-layout__content">
-        <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+        <section id="scroll-tab-1">
+          <div id="collage">
+            <!-- <img src="assets/pictures/Formal.jpg">
+            <img src="assets/pictures/Couple.jpg">
+            <img src="assets/pictures/Family.jpg">
+            <img src="assets/pictures/Cats.jpg">
+            <img src="assets/pictures/Graduation.jpg">
+            <img src="assets/pictures/Scuba.jpg">
+            <img src="assets/pictures/Carrowinds.jpg">
+            <img src="assets/pictures/Crowders.jpg">
+            <img src="assets/pictures/Engaged.jpg">
+            <img src="assets/pictures/Oriental.jpg">
+            <img src="assets/pictures/Study.jpg">
+            <img src="assets/pictures/Boat.jpg">
+            <img src="assets/pictures/Fair.jpg">
+            <img src="assets/pictures/Longboard.jpg">
+            <img src="assets/pictures/Skim.jpg">
+            <img src="assets/pictures/Vacation.jpg"> -->
+          </div>
           <div class="page-content">
-            <h3 class="center">About Me</h3>
+            <h3 class="section-header">About Me</h3>
             <p>
               Hi, my name is Gregory Jaros. I was born in Providence RI, but grew up in North Carolina with a family of three brothers and two great parents. Growing up I enjoyed working with tech and software, taking electives such as lego robotics during middle school and later computer engieering at high school. For college I went to the University of North Carolina at Charlotte where I initially studied computer science but switched to biology my junior year. I would later find out that year that I had ADHD and that had been a major component to why I hadn't done well in computer science. With the help I recieved from my diagnosis I was able focus and improve my grades in my new major and thought I could just as easily enjoy a career in it.
             </p>
@@ -59,9 +78,10 @@
             </p>
           </div>
         </section>
-        <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+        <hr />
+        <section id="scroll-tab-2">
           <div class="page-content">
-            <h3 class="center">Education</h3>
+            <h3 class="section-header">Education</h3>
             <div class="mdl-grid justify-grid">
               <div class="mdl-cell mdl-cell--6-col align-cell">
                 <h4>Tech Talent South</h4>
@@ -78,9 +98,10 @@
             </div>
           </div>
         </section>
-        <section class="mdl-layout__tab-panel" id="scroll-tab-3">
+        <hr />
+        <section id="scroll-tab-3">
           <div class="page-content">
-            <h3 class="center">Projects Highlights</h3>
+            <h3 class="section-header">Projects Highlights</h3>
             <div class="mdl-grid justify-grid">
               <div class="mdl-cell mdl-cell--6-col align-cell">
                 <h4>Maid Your Way</h4>
@@ -91,12 +112,13 @@
             </div>
           </div>
         </section>
-        <section class="mdl-layout__tab-panel" id="scroll-tab-4">
+        <hr />
+        <section id="scroll-tab-4">
           <div class="page-content">
-            <h3 class="center">Skills</h3>
+            <h3 class="section-header">Skills</h3>
             <div class="mdl-grid">
               <div class="mdl-cell mdl-cell--6-col">
-                <ul class="mdl-list align-list">
+                <ul class="mdl-list push-right">
                   <li class="mdl-list__item">
                       <i class="material-icons mdl-list__item-icon">label_important</i>
                       Ruby on Rails
@@ -124,7 +146,7 @@
                 </ul>
               </div>
               <div class="mdl-cell mdl-cell--6-col">
-                <ul class="mdl-list align-list">
+                <ul class="mdl-list push-right">
                   <li class="mdl-list__item">
                       <i class="material-icons mdl-list__item-icon">label_important</i>
                       Postgress DBMS
@@ -154,20 +176,15 @@
             </div>
           </div>
         </section>
-        <section class="mdl-layout__tab-panel" id="scroll-tab-5">
+        <hr />
+        <section id="scroll-tab-5">
           <div class="page-content">
-            <h3 class="center">Where I've Worked</h3>
+            <h3 class="section-header">Where I've Worked</h3>
             <div class="mdl-grid">
               <div class="mdl-cell mdl-cell--3-col">
                 <h5>Carolina Wetland Services</h5>
-              </div>
-              <div class="mdl-cell mdl-cell--9-col">
-                <h6>Crew Forman</h6>
-              </div>
-            </div>
-            <div class="mdl-grid">
-              <div class="mdl-cell mdl-cell--3-col">
-                May 201 - March 2018
+                <h6>Crew Forman</h6><br />
+                <p>May 201 - March 2018</p><br />
               </div>
               <div class="mdl-cell mdl-cell--9-col">
                 <ul class="mdl-list">
@@ -183,18 +200,11 @@
                 </ul>
               </div>
             </div>
-            <hr />
             <div class="mdl-grid">
               <div class="mdl-cell mdl-cell--3-col">
                 <h5>American Red Cross</h5>
-              </div>
-              <div class="mdl-cell mdl-cell--9-col">
-                <h6>Laboratory Technician</h6>
-              </div>
-            </div>
-            <div class="mdl-grid">
-              <div class="mdl-cell mdl-cell--3-col">
-                May 2016 - March 2017
+                <h6>Laboratory Technician</h6><br />
+                <p>May 2016 - March 2017</p><br />
               </div>
               <div class="mdl-cell mdl-cell--9-col">
                 <ul class="mdl-list">
@@ -210,18 +220,11 @@
                 </ul>
               </div>
             </div>
-            <hr />
             <div class="mdl-grid">
               <div class="mdl-cell mdl-cell--3-col">
                 <h5>University of North Carolina at Charlotte</h5>
-              </div>
-              <div class="mdl-cell mdl-cell--9-col">
-                <h6>Research Assistant</h6>
-              </div>
-            </div>
-            <div class="mdl-grid">
-              <div class="mdl-cell mdl-cell--3-col">
-                May 2016 - March 2017
+                <h6>Research Assistant</h6><br />
+                <p>May 2016 - March 2017</p><br />
               </div>
               <div class="mdl-cell mdl-cell--9-col">
                 <ul class="mdl-list">
@@ -237,12 +240,12 @@
                 </ul>
               </div>
             </div>
-            <hr />
           </div>
         </section>
-        <section class="mdl-layout__tab-panel" id="scroll-tab-6">
+        <hr />
+        <section id="scroll-tab-6">
           <div class="page-content">
-            <h3 class="center">Contact</h3>
+            <h3 class="section-header">Contact</h3>
             <div class="mdl-grid justify-grid">
               <div class="mdl-cell mdl-cell--3-col align-cell">
                 <div id="tt1" class="material-icons">email</div>
@@ -259,8 +262,6 @@
             </div>
           </div>
         </section>
-
-
       </main>
     </div>
 
