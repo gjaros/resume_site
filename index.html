@@ -45,55 +45,58 @@
       </header>
       <main class="mdl-layout__content">
         <section id="scroll-tab-1">
-          <div id="collage">
-            <!-- <img src="assets/pictures/Formal.jpg">
-            <img src="assets/pictures/Couple.jpg">
-            <img src="assets/pictures/Family.jpg">
-            <img src="assets/pictures/Cats.jpg">
-            <img src="assets/pictures/Graduation.jpg">
-            <img src="assets/pictures/Scuba.jpg">
-            <img src="assets/pictures/Carrowinds.jpg">
-            <img src="assets/pictures/Crowders.jpg">
-            <img src="assets/pictures/Engaged.jpg">
-            <img src="assets/pictures/Oriental.jpg">
-            <img src="assets/pictures/Study.jpg">
-            <img src="assets/pictures/Boat.jpg">
-            <img src="assets/pictures/Fair.jpg">
-            <img src="assets/pictures/Longboard.jpg">
-            <img src="assets/pictures/Skim.jpg">
-            <img src="assets/pictures/Vacation.jpg"> -->
-          </div>
           <div class="page-content">
-            <h3 class="section-header">About Me</h3>
-            <p>
-              Hi, my name is Gregory Jaros. I was born in Providence RI, but grew up in North Carolina with a family of three brothers and two great parents. Growing up I enjoyed working with tech and software, taking electives such as lego robotics during middle school and later computer engieering at high school. For college I went to the University of North Carolina at Charlotte where I initially studied computer science but switched to biology my junior year. I would later find out that year that I had ADHD and that had been a major component to why I hadn't done well in computer science. With the help I recieved from my diagnosis I was able focus and improve my grades in my new major and thought I could just as easily enjoy a career in it.
-            </p>
-            <br />
-            <p>
-              After graduating I worked in a couple laboratories until I could get an environmentally related job. Once there I found that I couldn't see myself working in the field long-term. On the side I had continued to program as I still enjoyed it and eventually decided to change my career by enrolling a web development course at Tech Talent South (TTS). There I was able to build a solid foundation in web development as well as gain a sense of direction as to where I wanted to go with coding.
-            </p>
-            <br />
-            <p>
-              I'm very excited for what the future holds for me. Since graduating the course I've been learning every day to build web applications to expand my knowledge and gain the experiance needed to succeed in this field. This site is an example of that and a small one at that. I hope you'll look at my other projects that I've created as well!
-            </p>
+            <div class="collage"></div>
+            <div class="overlay">
+              <h3 class="section-header">About Me</h3>
+              <p>
+                Hi, my name is Gregory Jaros. I was born in Providence RI, but grew up in North Carolina with a family of three brothers and two great parents. Growing up I enjoyed working with tech and software, taking electives such as lego robotics during middle school and later computer engieering at high school. For college I went to the University of North Carolina at Charlotte where I initially studied computer science but switched to biology my junior year. I would later find out that year that I had ADHD and that had been a major component to why I hadn't done well in computer science. With the help I recieved from my diagnosis I was able focus and improve my grades in my new major and thought I could just as easily enjoy a career in it.
+              </p>
+              <br />
+              <p>
+                After graduating I worked in a couple laboratories until I could get an environmentally related job. Once there I found that I couldn't see myself working in the field long-term. On the side I had continued to program as I still enjoyed it and eventually decided to change my career by enrolling a web development course at Tech Talent South (TTS). There I was able to build a solid foundation in web development as well as gain a sense of direction as to where I wanted to go with coding.
+              </p>
+              <br />
+              <p>
+                I'm very excited for what the future holds for me. Since graduating the course I've been learning every day to build web applications to expand my knowledge and gain the experiance needed to succeed in this field. This site is an example of that and a small one at that. I hope you'll look at my other projects that I've created as well!
+              </p>
+            </div>
           </div>
         </section>
-        <hr />
+        <hr class="push-down"/>
         <section id="scroll-tab-2">
           <div class="page-content">
             <h3 class="section-header">Education</h3>
             <div class="mdl-grid justify-grid">
               <div class="mdl-cell mdl-cell--6-col align-cell">
-                <h4>Tech Talent South</h4>
-                <p>
-                  Eight-week immersive program that equips students to succeed in the tech industry. Covers topics such as Ruby on Rails, HTML/CSS, APIs, Deployment, Domain Modeling, Bootstrap, and JavaScript.
-                </p>
+                <div class="mdl-card">
+                  <div class="mdl-card__title tts">
+                    <h2 class="mdl-card__title-text">Tech Talent South</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    Eight-week immersive program that equips students to succeed in the tech industry. Covers topics such as Ruby on Rails, HTML/CSS, APIs, Deployment, Domain Modeling, Bootstrap, and JavaScript.
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a href="https://www.techtalentsouth.com/courses/code-immersion/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      Visit
+                    </a>
+                  </div>
+                </div><!-- end card -->
               </div>
               <div class="mdl-cell mdl-cell--6-col align-cell">
-                <h4>University of North Carolina at Charlotte</h4>
-                <p>
-                  concentration in Environment, Ecology, and Evolution.
-                </p>
+                <div class="mdl-card">
+                  <div class="mdl-card__title uncc">
+                    <h2 class="mdl-card__title-text">University of North Carolina at Charlotte</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    B.S in Biology with Concentration in Environment, Ecology, and Evolution.
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a href="https://www.uncc.edu/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      Visit
+                    </a>
+                  </div>
+                </div><!-- end card -->
               </div>
             </div>
           </div>
@@ -104,10 +107,34 @@
             <h3 class="section-header">Projects Highlights</h3>
             <div class="mdl-grid justify-grid">
               <div class="mdl-cell mdl-cell--6-col align-cell">
-                <h4>Maid Your Way</h4>
+                <div class="mdl-card">
+                  <div class="mdl-card__title myw">
+                    <h2 class="mdl-card__title-text">Maid Your Way</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    Site made for a client with a maid service company. Includes blogging and scheduling features. Inquire for admin privillages.
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a href="https://maidyourway.herokuapp.com/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      Visit
+                    </a>
+                  </div>
+                </div><!-- end card -->
               </div>
               <div class="mdl-cell mdl-cell--6-col align-cell">
-                <h4>Carolina Wetland Services</h4>
+                <div class="mdl-card">
+                  <div class="mdl-card__title cws">
+                    <h2 class="mdl-card__title-text">Carolina Wetland Services</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    Created modern website localizing all pages into single page format using JavaScript.
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a href="#" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" disabled>
+                      Visit
+                    </a>
+                  </div>
+                </div><!-- end card -->
               </div>
             </div>
           </div>

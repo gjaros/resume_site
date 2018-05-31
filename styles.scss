@@ -41,6 +41,7 @@ main {
   font-family: 'Roboto', sans-serif;
   color: $color2;
   background-color: $color4;
+  position: absolute;
 }
 
 hr {
@@ -53,7 +54,6 @@ h2 {
 }
 
 h3, h4 {
-  // color: $color5;
   font-family: 'Kanit', sans-serif;
   text-decoration: underline;
 }
@@ -61,6 +61,61 @@ h3, h4 {
 h5 {
   font-family: 'Kanit', sans-serif;
   color: $color1;
+}
+
+.collage {
+  height: 100%;
+  background: url('assets/collage.png');
+  background-size: cover;
+  position:absolute;
+  left: 0;
+  right: 0;
+  -webkit-filter: brightness(35%);
+  -moz-filter: brightness(35%);
+  -o-filter: brightness(35%);
+  -ms-filter: brightness(35%);
+  filter: brightness(35%);
+}
+
+.overlay {
+  left: 15%;
+  right: 15%;
+  position: absolute;
+}
+
+.mdl-card {
+  width: 100%;
+  height: 80%;
+  background-color: $color4;
+  box-shadow: 2px 2px 0.5px 1px $color2, 1px 1px 0.25px 0.5px $color2;
+  .mdl-card__title {
+    height: 300px;
+    .mdl-card__title-text {
+      //insert css into styles.css at bottom of this file
+      color: $color2;
+      &:hover {
+        color: $color1;
+        transition: ease .5s;
+      }
+    }
+  }
+  .tts {
+    background: url('assets/tts.jpg');
+    background-size: cover;
+  }
+  .uncc {
+    background: url('assets/uncc.jpg');
+    background-size: cover;
+  }
+  .myw {
+    background: url('assets/myw.png');
+    background-size: cover;
+  }
+  .cws {
+    background: url('assets/cws.png');
+    background-size: cover;
+  }
+  .mdl-card__supporting-text, .mdl-card__title-text { color: $color2; }
 }
 
 .mdl-button {
@@ -72,17 +127,13 @@ h5 {
   }
 }
 
-.justify-grid {
-  justify-content: center;
-}
+.justify-grid { justify-content: center; }
 
-.align-cell {
-  text-align: center;
-}
+.align-cell { text-align: center; }
 
-.push-right {
-  margin-left: 35%;
-}
+.push-right { margin-left: 35%; }
+
+.push-down { margin-top: 70%; }
 
 .mdl-list {
   .mdl-list__item-icon {
@@ -101,24 +152,32 @@ h5 {
   }
 }
 
-.section-header {
-  text-align: center;
-}
+.section-header { text-align: center; }
 
 .social-buttons {
-    .facebook {
-      @include social-button($facebook);
-    }
-    .twitter {
-      @include social-button($twitter);
-    }
-    .linkedin {
-      @include social-button($linkedin);
-    }
-    .google {
-      @include social-button($google);
-    }
-    .github {
-      @include social-button($github);
-    }
+  .facebook {
+    @include social-button($facebook);
   }
+  .twitter {
+    @include social-button($twitter);
+  }
+  .linkedin {
+    @include social-button($linkedin);
+  }
+  .google {
+    @include social-button($google);
+  }
+  .github {
+    @include social-button($github);
+  }
+}
+
+// .mdl-card .mdl-card__title {
+//   height: 300px;
+//   padding: 0; }
+//   .mdl-card .mdl-card__title .mdl-card__title-text {
+//     color: #e4e6c3;
+//     background-color: rgb(0, 0, 0, 0.5);
+//     width: 100%;
+//     padding: 5px;
+//     text-align: center; }
