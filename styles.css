@@ -1,10 +1,3 @@
-.mdl-layout__header {
-  color: #222725;
-  background-color: #899878; }
-
-.mdl-layout__tab-bar, .mdl-layout__tab-bar-button {
-  background-color: #899878; }
-
 main {
   padding: 0 15% 10% 15%;
   font-family: 'Roboto', sans-serif;
@@ -27,6 +20,18 @@ h5 {
   font-family: 'Kanit', sans-serif;
   color: #ffc15e; }
 
+.justify-grid {
+  justify-content: center; }
+
+.align-cell {
+  text-align: center; }
+
+.push-right {
+  margin-left: 35%; }
+
+.push-down {
+  margin-top: 70%; }
+
 .collage {
   height: 100%;
   background: url("assets/collage.png");
@@ -44,6 +49,39 @@ h5 {
   left: 15%;
   right: 15%;
   position: absolute; }
+
+.b-progress {
+  display: inline;
+  margin: 0 2px 0 2px;
+  border-radius: 4px;
+  padding: 0px 15px 0px 15px;
+  background-color: #80dfff; }
+
+.i-progress {
+  display: inline;
+  margin: 0 2px 0 2px;
+  border-radius: 4px;
+  padding: 0px 15px 0px 15px;
+  background-color: #bfff80; }
+
+.a-progress {
+  display: inline;
+  margin: 0 2px 0 2px;
+  border-radius: 4px;
+  padding: 0px 15px 0px 15px;
+  background-color: #ff9f80; }
+
+.odo-box {
+  color: #ffc15e;
+  text-align: center;
+  font-size: 12px; }
+
+.mdl-layout__header {
+  color: #222725;
+  background-color: #899878; }
+
+.mdl-layout__tab-bar, .mdl-layout__tab-bar-button {
+  background-color: #899878; }
 
 .mdl-card {
   width: 100%;
@@ -84,22 +122,13 @@ h5 {
     color: #ffc15e;
     transition: ease .5s; }
 
-.justify-grid {
-  justify-content: center; }
-
-.align-cell {
-  text-align: center; }
-
-.push-right {
-  margin-left: 35%; }
-
-.push-down {
-  margin-top: 70%; }
-
 .mdl-list .mdl-list__item-icon {
   color: #ffc15e; }
 .mdl-list li {
   color: #e4e6c3; }
+
+.change-bullet {
+  color: red; }
 
 .material-icons {
   font-size: 50px; }

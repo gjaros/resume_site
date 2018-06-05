@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-train-station.css" />
     <link href="https://fonts.googleapis.com/css?family=Kanit:600|Roboto:500" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -45,7 +48,7 @@
       </header>
       <main class="mdl-layout__content">
         <section id="scroll-tab-1">
-          <div class="page-content">
+          <div class="page-content hideme">
             <div class="collage"></div>
             <div class="overlay">
               <h3 class="section-header">About Me</h3>
@@ -60,10 +63,12 @@
               <p>
                 I'm very excited for what the future holds for me. Since graduating the course I've been learning every day to build web applications to expand my knowledge and gain the experiance needed to succeed in this field. This site is an example of that and a small one at that. I hope you'll look at my other projects that I've created as well!
               </p>
+
+              <p class="odo-box"><i>"...In fact, researchers have settled on what they believe is the magic number for true expertise: ten thousand hours..."</i> ― Malcolm Gladwell, Outliers: The Story of Success<br /><span id="odometer" class="odometer align-cell">000</span>&nbsp&nbsp hours spent programming.</p>
             </div>
           </div>
         </section>
-        <hr class="push-down"/>
+        <hr class="push-down" />
         <section id="scroll-tab-2">
           <div class="page-content">
             <h3 class="section-header">Education</h3>
@@ -143,60 +148,75 @@
         <section id="scroll-tab-4">
           <div class="page-content">
             <h3 class="section-header">Skills</h3>
-            <div class="mdl-grid">
+            <div class="align-cell">
+              <div class="b-progress"></div>&nbsp = Beginner &nbsp&nbsp<div class="i-progress"></div>&nbsp = Intermediate &nbsp&nbsp<div class="a-progress"></div>&nbsp = Advance
+            </div>
+            <div id="leave" class="mdl-grid">
               <div class="mdl-cell mdl-cell--6-col">
                 <ul class="mdl-list push-right">
                   <li class="mdl-list__item">
-                      <i class="material-icons mdl-list__item-icon">label_important</i>
-                      Ruby on Rails
+                    <p>advanced</p>
+                    <i class="material-icons mdl-list__item-icon">label_important</i>
+                    Ruby on Rails
                   </li>
                   <li class="mdl-list__item">
-                      <i class="material-icons mdl-list__item-icon">label_important</i>
-                      HTML/CSS/SASS
+                    <p>advanced</p>
+                    <i class="material-icons mdl-list__item-icon">label_important</i>
+                    HTML/CSS/SASS
                   </li>
                   <li class="mdl-list__item">
-                      <i class="material-icons mdl-list__item-icon">label_important</i>
-                      JavaScript
+                    <p>intermediate</p>
+                    <i class="material-icons mdl-list__item-icon">label_important</i>
+                    JavaScript
                   </li>
                   <li class="mdl-list__item">
-                      <i class="material-icons mdl-list__item-icon">label_important</i>
-                      JQuery
+                    <p>intermediate</p>
+                    <i class="material-icons mdl-list__item-icon">label_important</i>
+                    JQuery
                   </li>
                   <li class="mdl-list__item">
-                      <i class="material-icons mdl-list__item-icon">label_important</i>
-                      React
+                    <p>beginner</p>
+                    <i class="material-icons mdl-list__item-icon">label_important</i>
+                    React
                   </li>
                   <li class="mdl-list__item">
-                      <i class="material-icons mdl-list__item-icon">label_important</i>
-                      Shell Scripting
+                    <p>beginner</p>
+                    <i class="material-icons mdl-list__item-icon">label_important</i>
+                    Shell Scripting
                   </li>
                 </ul>
               </div>
               <div class="mdl-cell mdl-cell--6-col">
                 <ul class="mdl-list push-right">
                   <li class="mdl-list__item">
-                      <i class="material-icons mdl-list__item-icon">label_important</i>
-                      Postgress DBMS
+                    <p>beginner</p>
+                    <i class="material-icons mdl-list__item-icon">label_important</i>
+                    Postgress DBMS
                   </li>
                   <li class="mdl-list__item">
-                      <i class="material-icons mdl-list__item-icon">label_important</i>
-                      Project Management
+                    <p>intermediate</p>
+                    <i class="material-icons mdl-list__item-icon">label_important</i>
+                    Project Management
                   </li>
                   <li class="mdl-list__item">
-                      <i class="material-icons mdl-list__item-icon">label_important</i>
-                      Data Analysis
+                    <p>intermediate</p>
+                    <i class="material-icons mdl-list__item-icon">label_important</i>
+                    Data Analysis
                   </li>
                   <li class="mdl-list__item">
-                      <i class="material-icons mdl-list__item-icon">label_important</i>
-                      Report Writing
+                    <p>advanced</p>
+                    <i class="material-icons mdl-list__item-icon">label_important</i>
+                    Report Writing
                   </li>
                   <li class="mdl-list__item">
-                      <i class="material-icons mdl-list__item-icon">label_important</i>
-                      System Building
+                    <p>advanced</p>
+                    <i class="material-icons mdl-list__item-icon">label_important</i>
+                    System Building
                   </li>
                   <li class="mdl-list__item">
-                      <i class="material-icons mdl-list__item-icon">label_important</i>
-                      Microsoft Office
+                    <p>advanced</p>
+                    <i class="material-icons mdl-list__item-icon">label_important</i>
+                    Microsoft Office
                   </li>
                 </ul>
               </div>
@@ -251,7 +271,7 @@
               <div class="mdl-cell mdl-cell--3-col">
                 <h5>University of North Carolina at Charlotte</h5>
                 <h6>Research Assistant</h6><br />
-                <p>May 2016 - March 2017</p><br />
+                <p>March 2015 - December 2015</p><br />
               </div>
               <div class="mdl-cell mdl-cell--9-col">
                 <ul class="mdl-list">
@@ -294,5 +314,6 @@
 
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="scripts.js"></script>
+    <script src="http://github.hubspot.com/odometer/odometer.js"></script>
   </body>
 </html>
