@@ -7,13 +7,13 @@ function main() {
     .mouseenter(function() {
       switch($(this).find('p').text()) {
         case 'beginner':
-          $(this).find('i').css({'color':'#80dfff', 'transition':'ease 1s'});
+          $(this).find('i').css({'color':'#1ac6ff', 'transition':'ease 0.5s'});
           break;
         case 'intermediate':
-          $(this).find('i').css({'color':'#bfff80', 'transition':'ease 1s'});
+          $(this).find('i').css({'color':'#8cff1a', 'transition':'ease 0.5s'});
           break
         case 'advanced':
-          $(this).find('i').css({'color':'#ff9f80', 'transition':'ease 1s'});
+          $(this).find('i').css({'color':'#ff531a', 'transition':'ease 0.5s'});
       }
     });
 
@@ -28,7 +28,7 @@ function main() {
     });
 
   setTimeout(function() {
-    odometer.innerHTML = 707;
+    odometer.innerHTML = 735;
   }, 500);
 }
 
